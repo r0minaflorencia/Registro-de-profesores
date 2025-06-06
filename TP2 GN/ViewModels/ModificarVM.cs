@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP2_GN.ViewModels
+namespace Registro_de_profesores.ViewModels
 {
     internal class ModificarVM : ViewModelBase
     {

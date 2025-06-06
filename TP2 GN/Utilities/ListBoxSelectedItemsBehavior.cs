@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows;
 
-namespace TP2_GN.Utilities
+namespace Registro_de_profesores.Utilities
 {
     public static class ListBoxSelectedItemsBehavior
     {

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
 
-namespace TP2_GN.ViewModels
+namespace Registro_de_profesores.ViewModels
 {
     class ViewModelBase : INotifyPropertyChanged
     {

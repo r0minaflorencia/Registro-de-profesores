@@ -4,10 +4,10 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TP2_GN.DataBase;
-using TP2_GN.Models;
+using Registro_de_profesores.DataBase;
+using Registro_de_profesores.Models;
 
-namespace TP2_GN.ViewModels
+namespace Registro_de_profesores.ViewModels
 {
     internal class EliminarVM : ViewModelBase
     {

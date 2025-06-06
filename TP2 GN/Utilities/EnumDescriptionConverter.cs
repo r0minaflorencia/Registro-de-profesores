@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 
-namespace TP2_GN.Utilities
+namespace Registro_de_profesores.Utilities
 {
     internal class EnumDescriptionConverter : IValueConverter
     {

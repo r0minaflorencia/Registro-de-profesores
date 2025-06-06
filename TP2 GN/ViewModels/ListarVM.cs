@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using TP2_GN.Commands;
-using TP2_GN.DataBase;
-using TP2_GN.Models;
-using TP2_GN.Views;
+using Registro_de_profesores.Commands;
+using Registro_de_profesores.DataBase;
+using Registro_de_profesores.Models;
+using Registro_de_profesores.Views;
 
-namespace TP2_GN.ViewModels
+namespace Registro_de_profesores.ViewModels
 {
     internal class ListarVM : ViewModelBase
     {

@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 using System.Transactions;
 using System.Windows.Controls;
 using System.Windows.Input;
-using TP2_GN.Commands;
-using TP2_GN.Views;
+using Registro_de_profesores.Commands;
+using Registro_de_profesores.Views;
 
-namespace TP2_GN.ViewModels
+namespace Registro_de_profesores.ViewModels
 {
     class NavegacionVM : ViewModelBase
     {
@@ -32,20 +32,22 @@ namespace TP2_GN.ViewModels
 
         }
 
+        private void Home(object obj) => VistaActual = new HomeVM();
         private void Registrar(object obj) => VistaActual = new ProfesorViewModel();
         private void Listar(object obj) => VistaActual = new ListarVM();
         private void Modificar(object obj) => VistaActual = new ModificarVM();
         private void Eliminar(object obj) => VistaActual = new EliminarVM();
 
+        public ICommand MostrarHomeViewCommand { get; set; }
         public ICommand MostrarRegistrarViewCommand { get; set; }
         public ICommand MostrarListarViewCommand { get; set; }
         public ICommand MostrarModificarViewCommand { get; set; }
         public ICommand MostrarEliminarViewCommand { get; set; }
 
-
         public NavegacionVM()
         {
             // Asigna el comando y la acción para cambiar la vista
+            MostrarHomeViewCommand = new RelayCommand(Home);
             MostrarRegistrarViewCommand = new RelayCommand(Registrar);
             MostrarListarViewCommand = new RelayCommand(Listar);
             MostrarModificarViewCommand = new RelayCommand(Modificar);

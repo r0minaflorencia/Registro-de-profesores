@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace TP2_GN.Utilities
+namespace Registro_de_profesores.Utilities
 {
     public class Btn : RadioButton
     {

@@ -1,12 +1,12 @@
-﻿<Window x:Class="TP2_GN.MainWindow"
+﻿<Window x:Class="Registro_de_profesores.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:TP2_GN"
-        xmlns:Menu="clr-namespace:TP2_GN.Utilities"
-        xmlns:viewmodels="clr-namespace:TP2_GN.ViewModels"
-        xmlns:views="clr-namespace:TP2_GN.Views"
+        xmlns:local="clr-namespace:Registro_de_profesores"
+        xmlns:Menu="clr-namespace:Registro_de_profesores.Utilities"
+        xmlns:viewmodels="clr-namespace:Registro_de_profesores.ViewModels"
+        xmlns:views="clr-namespace:Registro_de_profesores.Views"
         mc:Ignorable="d"
         Title="Registro de profesores" Height="600" Width="850"
         WindowStartupLocation="CenterScreen" >
@@ -28,6 +28,17 @@
             <Border Background="#88adf3" Margin="0"/>
             <StackPanel Height="400" Width="150">
 
+                <!-- // Home // -->
+                <Menu:Btn Style="{StaticResource BtnStyle}"
+                              Command="{Binding MostrarHomeViewCommand}"
+                              IsChecked="True">
+
+                    <Grid>
+                        <TextBlock Text="Home" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"/>
+                    </Grid>
+
+                </Menu:Btn>
+
                 <!-- // Registrar // -->
                 <Menu:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding MostrarRegistrarViewCommand}"
@@ -46,17 +57,6 @@
 
                     <Grid>
                         <TextBlock Text="Listar" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"/>
-                    </Grid>
-
-                </Menu:Btn>
-
-                <!-- // Modificar // -->
-                <Menu:Btn Style="{StaticResource BtnStyle}"
-                              Command="{Binding MostrarModificarViewCommand}"
-                              IsChecked="True">
-
-                    <Grid>
-                        <TextBlock Text="Modificar" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"/>
                     </Grid>
 
                 </Menu:Btn>
@@ -92,8 +92,10 @@
             <Image Source="/images/utn.png"  Height="85" Width="98" HorizontalAlignment="Right" VerticalAlignment="Top"
                    Margin="20"></Image>
             <Image Source="/images/sims.png"  Height="398" Width="456" HorizontalAlignment="Center" ></Image>
-            <Image Source="/images/sim1f.png"  Height="350" Width="480" HorizontalAlignment="Right" VerticalAlignment="Bottom"></Image>
-            <Image Source="/images/sim2f.png"  Height="350" Width="480" HorizontalAlignment="Left" VerticalAlignment="Bottom"></Image>
+            <Image Source="/images/sim1f.png"  Height="350" Width="480" HorizontalAlignment="Right"
+                   VerticalAlignment="Bottom"></Image>
+            <Image Source="/images/sim2f.png"  Height="350" Width="480" HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom"></Image>
 
             <ContentControl x:Name="Pages" Content="{Binding VistaActual}" />
         </Grid>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TP2_GN.Properties
+namespace Registro_de_profesores.Properties
 {
 
 

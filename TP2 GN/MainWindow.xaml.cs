@@ -12,11 +12,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TP2_GN.ViewModels;
-using TP2_GN.Models;
+using Registro_de_profesores.ViewModels;
+using Registro_de_profesores.Models;
 using System.Data.SqlClient;
+using DotNetEnv;
 
-namespace TP2_GN
+namespace Registro_de_profesores
 {
     public partial class MainWindow : Window
     {
@@ -24,6 +25,7 @@ namespace TP2_GN
         public MainWindow()
         {
             InitializeComponent();
+
             DataContext = new NavegacionVM();
         }
 

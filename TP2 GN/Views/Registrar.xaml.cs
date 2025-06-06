@@ -12,9 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TP2_GN.ViewModels;
+using Registro_de_profesores.ViewModels;
 
-namespace TP2_GN.Views
+namespace Registro_de_profesores.Views
 {
 
     public partial class Registrar : UserControl

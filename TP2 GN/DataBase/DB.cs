@@ -5,12 +5,12 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TP2_GN.Models;
+using Registro_de_profesores.Models;
 using MySql.Data.MySqlClient;
-using TP2_GN.Utilities;
+using Registro_de_profesores.Utilities;
 using System.Windows.Media.Media3D;
 
-namespace TP2_GN.DataBase
+namespace Registro_de_profesores.DataBase
 {
     internal class DB
     {
@@ -20,6 +20,7 @@ namespace TP2_GN.DataBase
 
         public DB()
         {
+
             _connection = "Server=localhost;Database=registro_profesores;Uid=root;Pwd=root;";
 
         }

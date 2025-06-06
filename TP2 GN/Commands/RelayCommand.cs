@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace TP2_GN.Commands
+namespace Registro_de_profesores.Commands
 {
     internal class RelayCommand : ICommand
     {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP2_GN.Utilities
+namespace Registro_de_profesores.Utilities
 {
     public enum MateriasEnum
     {

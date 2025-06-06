@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TP2_GN.Views
+namespace Registro_de_profesores.Views
 {
     /// <summary>
     /// Lógica de interacción para Home.xaml
     /// </summary>
-    public partial class Home : UserControl
+    public partial class HomeVM : UserControl
     {
-        public Home()
+        public HomeVM()
         {
             InitializeComponent();
         }

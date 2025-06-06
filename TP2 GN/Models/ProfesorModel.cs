@@ -4,9 +4,9 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TP2_GN.Utilities;
+using Registro_de_profesores.Utilities;
 
-namespace TP2_GN.Models
+namespace Registro_de_profesores.Models
 {
     public class ProfesorModel : INotifyPropertyChanged
     {

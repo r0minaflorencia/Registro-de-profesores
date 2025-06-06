@@ -10,12 +10,12 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media.Media3D;
-using TP2_GN.Commands;
-using TP2_GN.DataBase;
-using TP2_GN.Models;
-using TP2_GN.Utilities;
+using Registro_de_profesores.Commands;
+using Registro_de_profesores.DataBase;
+using Registro_de_profesores.Models;
+using Registro_de_profesores.Utilities;
 
-namespace TP2_GN.ViewModels
+namespace Registro_de_profesores.ViewModels
 {
     internal class ProfesorViewModel : ViewModelBase
     {
